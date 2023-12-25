@@ -13,3 +13,6 @@ body{
     align-items: center;
     flex-direction: column;
 }
+.current_nav{
+    color: gold;
+}
