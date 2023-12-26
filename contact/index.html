@@ -1,0 +1,84 @@
+---
+title: Contact Us - Jaskin Tech
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {%include base_head.html%}
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact_details.css">
+    <link rel="stylesheet" href="css/contact_form.css">
+</head>
+<body>
+    {%include default_nav.html%}
+    <main>
+        <section id="hero_section">
+            <div class="cover">   
+                <h1>Talk To A Human</h1>
+                <p>
+                    Your messages aren't going to be left on read. Your Email isn't going to be lost in our inbox. Even Missed calls will be returned.
+                    We promise to give you the same service we would want to experience ourselves!
+                </p>
+            </div>
+        </section>
+
+        <section id="contact_details">
+            <div id="contact_details_text">
+                <h2>We aim to make your experience with us very convinent and helpful</h2>
+                <p>
+                    We strive to gain your Goodwill by providing you a great experience. 
+                    Feel free to reach out to us, from basic questions to complex inquires, we are ready to help you learn more about our services or make a consultation.
+                </p>
+                <h3>Frequently Asked Questions</h3>
+                <p>
+                    You can also check out our Frequently Asked Questions(FAQ) to see if your question has already been answered.
+                </p>
+                <a href="" class="action_button">Frequently Asked Questions</a>
+            </div>
+            <div id="contact_details_items">
+                <header>Direct Contact</header>
+                <div><p>Phone: +233 204655978</p></div>
+                <div><p>Whatsapp: +233 202191728</p></div>
+                <div><p>Email: jaskintechsolutions@gmail.com</p></div>
+                <div>
+                    <p>Socials: </p>
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact_form_frame">
+            <div>
+                <header>CONTACT US TODAY</header>
+            </div>
+            <form id="contact_form" action="https://api.web3forms.com/submit" onsubmit="clear_form(this)" method="POST">
+                <input type="hidden" name="access_key" value="db46ff7f-97ca-47c2-acc2-f64146099bc7">
+                <input type="hidden" name="from_name" value="Jaskin Tech Contact Page">
+                <input type="hidden" name="redirect" value="https://jaskin.tech/contact/success-thank_you">
+                <div class="half">
+                    <p>Your Name</p>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="half">
+                    <p>Your Email</p>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="half">
+                    <p>Your Phone</p>
+                    <input type="text" name="phone number" placeholder="Your Phone Number (Optional)">
+                </div>
+                <div>
+                    <p>Your Message</p>
+                    <textarea name="message" placeholder="Let's start a conversation on your project" required></textarea>
+                </div>
+                <div><button type="submit">Send Your Message, We'll Answer</button></div>
+            </form>
+        </section>
+    </main>
+    {%include footer.html%}
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
