@@ -5,9 +5,9 @@ main_img: code_computer2.png
 layout: blog
 header_font_family: cabin-ver
 p_font_family: cabin-sans
+author: James Koduah
+blog_date: 23 December, 2023
 ---
-
-# Navigating the Digital Frontier: A Guide to Buying Your Domain Name
 
 In the vast landscape of the internet, your domain name is your digital footprint—a unique marker that sets the stage for your online presence. Whether you're launching a business or staking your claim in the digital world, the process of buying a domain name is a pivotal step. Join us as we demystify this journey and empower you to secure the perfect digital address for your venture.
 

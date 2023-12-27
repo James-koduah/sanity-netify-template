@@ -4,29 +4,30 @@
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Why have a Legal Contract for your project</title>
-<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/blog/blogs_css/blog.css">
 <link rel="stylesheet" href="/css/footer.css">
 <link rel="icon" href="/logo.ico" type="image/x-icon">
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script src="/js/main.js" defer></script>
+<script src="/blog/blogs_js/blog.js"></script>
     <link rel="stylesheet" href="/blog/blogs_css/style.css">
     
 <style>
     
-    #blog_content h1,h2,h3,h4,h5,h6{
+    main h1,h2,h3,h4,h5,h6{
         font-family: var(--cabin-ver) !important;
     }
     
     
-    #blog_content p{
+    main p{
         font-family: var(--cabin-sans) !important;
     }
     
 </style>
 </head>
 <body>
-    <nav>
+    <!-- <nav>
     <div id="logo">
         <img src="/logo.ico" alt="Jaskin Tech logo">
         <p><i>J</i>ASKIN <i>T</i>ECH .</p>
@@ -146,27 +147,16 @@
         </div>
         <div id="nav_dropdown_sub"><img src="/images/iconified/icon-fotor-20231215202510.png" alt=""></div>
     </div>
-</nav>
+</nav> -->
     <div id="page">
-        <div id="like_blogs">
-            
-            <a href="/blogs/buying_a_domain_name.html" class="like_blogs_item">
-                Buying a domain name
-            </a>
-            
-            <a href="/blogs/web_design_process.html" class="like_blogs_item">
-                Web Development Process
-            </a>
-            
-            <a href="/blogs/why_have_a_contract.html" class="like_blogs_item">
-                Why have a Legal Contract for your project
-            </a>
-            
-        </div>
         <main>
-            <div id="main_img"><img src="/images/drone.jpeg" alt=""></div>
+            <div id="blog_header">
+                <h1>Why have a Legal Contract for your project</h1>
+            </div>
+            <div id="main_img"><img src="/images/signing_contract.jpg" alt=""></div>
             <div id="blog_summary">
-                In the business world, we're usually hopeful and not thinking about bad things happening. But a contract is more than just protection from problems. It's like a helpful tool that not only helps deal with risks but also sets the stage for lots of good stuff.
+                <header>Summary:</header>
+                <p>In the business world, we're usually hopeful and not thinking about bad things happening. But a contract is more than just protection from problems. It's like a helpful tool that not only helps deal with risks but also sets the stage for lots of good stuff.</p>
             </div>
             <section id="blog_content">
                 <h1 id="the-indispensable-importance-of-contracts-in-web-agency-projects">The Indispensable Importance of Contracts in Web Agency Projects</h1>
@@ -202,6 +192,32 @@
 
             </section>
         </main>
+        <div id="menu">
+            <div class="menu_item" onclick="close_side_menu()">
+                <p>Close</p>
+                <ion-icon name="close"></ion-icon>
+            </div>
+            <a href="/blog/" class="menu_item">
+                <p>Home</p>
+                <ion-icon name="home-outline"></ion-icon>
+            </a>
+            <div class="menu_item_list">
+                <p>Articles</p>
+                <ul>
+                    
+                    
+                    <li><a href="/blogs/buying_a_domain_name.html">Buying a domain name</a></li>
+                    
+                    
+                    
+                    <li><a href="/blogs/web_design_process.html">Web Development Process</a></li>
+                    
+                    
+                    
+                    
+                </ul>
+            </div>
+        </div>
     </div>
     <footer>
     <div id="footer_header">

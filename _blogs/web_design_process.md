@@ -5,6 +5,8 @@ main_img: code_scree.jpg
 layout: blog
 header_font_family: cabin-ver
 p_font_family: cabin-sans
+author: James Koduah
+blog_date: 26th December, 2023
 ---
 
 

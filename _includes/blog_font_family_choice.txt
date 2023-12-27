@@ -1,12 +1,12 @@
 
 <style>
     {% if page.header_font_family %}
-    #blog_content h1,h2,h3,h4,h5,h6{
+    main h1,h2,h3,h4,h5,h6{
         font-family: var(--{{page.header_font_family}}) !important;
     }
     {% endif %}
     {% if page.p_font_family %}
-    #blog_content p{
+    main p{
         font-family: var(--{{page.p_font_family}}) !important;
     }
     {%endif%}
