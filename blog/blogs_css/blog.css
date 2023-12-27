@@ -26,6 +26,7 @@
     --work-ver: "Work Sans", Verdana, Geneva, Tahoma, sans-serif;
     --work-cabin-ver: "Work Sans", "Cabin", Verdana, Geneva, Tahoma, sans-serif;
     --mons: "Montserrat", Arial, Tahoma, sans-serif;
+    --museo: "Museo Sans Rounded",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
     font-size: 5px;
 }
 input:focus, textarea:focus{
@@ -43,6 +44,7 @@ img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 8px;
 }
 
 body{
@@ -120,6 +122,11 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px #ddd solid;
+    position: sticky;
+    top: 0px;
+    background-color: var(--ma-bg);
+    z-index: 100;
 }
 #logo{
     display: flex;
@@ -132,7 +139,7 @@ nav{
     height: 40px;
 }
 #logo p{
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 600;
     margin-left: 10px;
     font-family: var(--verdana);
@@ -140,157 +147,7 @@ nav{
 #logo p i{
     font-size: 150%;
 }
-#nav_right{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100%;
-}
-.nav_right_main{
-    position: relative;
-    list-style-type: none;
-    width: 25%;
-    min-width: fit-content;
-    height: 100%;
-    font-size: 2.4em;
-    letter-spacing: 1px;
-    display: flex;
-    align-items: center;
-}
-.nav_right_main:hover{
-    border-bottom:2px #000 solid;
-}
-.nav_right_main a{
-    width: 100%;
-    height: 100%;
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.nav_right_main a ion-icon{
-    margin-left: 3px;
-    font-size: 120%;
-}
-#nav_right .action_button{
-    padding: 15px 20px;
-    width: fit-content;
-    height: fit-content;
-    font-size: inherit;
-    font-weight: 400;
-}
-.nav_dropdown_parent:hover .nav_dropdown{
-    display: block;
-}
-
-.nav_dropdown{
-    position: absolute;
-    display: none;
-    width: 200px;
-    top: 100%;
-    margin-left: -20px;
-    background-color: #fff;
-}
-.nav_dropdown li{
-    width: 100%;
-    height: 50px;
-    color: #111;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.nav_dropdown li a:hover{
-    background: #000;
-    color: #ccc;
-}
-
-
-
-#nav_dropdown_menu{
-    position: absolute;
-    width: 96vw;
-    padding: 10px 2vw;
-    margin-left: -2vw;
-    height: calc(90vh - 80px);
-    background: var(--su-bg);
-    top: -1000%;
-    display: none;
-    flex-wrap: wrap;
-    transition: 0.5s;
-    z-index: 90;
-}
-#nav_dropdown_main{
-    width: 55%;
-    height: 95%;
-    overflow-y: auto;
-}
-#nav_dropdown_main::-webkit-scrollbar{
-    width: 5px;
-}
-#nav_dropdown_main::-webkit-scrollbar-track{
-    background-color: var(--ma-bg);
-}
-#nav_dropdown_main::-webkit-scrollbar-thumb{
-    background-color: var(--at-bg);
-}
-#nav_dropdown_main .action_button{
-    padding: 10px 15px;
-    margin-bottom: 40px;
-}
-#nav_dropdown_main .item{
-    width: 100%;
-    margin-top: 25px;
-    display: flex;
-    align-items: center;
-}
-#nav_dropdown_main .item .item_image_frame{
-    width: 15vw;
-    height: 50px;
-    margin-right: 5vw;
-}
-#nav_dropdown_main .item p{
-    font-size: 2.9em;
-}
-
-#nav_dropdown_sub{
-    width: 45%;
-    height: 100%;
-}
-#nav_dropdown_sub img{
-    object-fit:contain
-}
-#nav_menu_header{
-    width: 100%;
-    height: fit-content;
-}
-#nav_menu_header header{
-    font-size: 4.5em;
-    font-family: var(--cabin-ver);
-    margin-bottom: 5px;
-}
-#nav_menu_header .action_button{
-    font-size: 2em;
-    padding: 10px 15px;
-}
-@media (max-width: 550px) {
-    #nav_dropdown_sub{
-        display: none;
-    }
-    #nav_dropdown_main{
-        width: 100%;
-    }
-    #nav_dropdown_main .item .item_image_frame{
-        width: 35vw;
-        margin-right: 10vw;
-    }
-    
-}
-@media (max-width: 900px) {
-    nav .mobile_off{
-        display: none !important;
-    }
-    nav .mobile_on{
-        display: flex !important;
-    }
+#menu_button{
+    font-size: 35px;
+    cursor: pointer;
 }

@@ -9,7 +9,7 @@
 <link rel="icon" href="/logo.ico" type="image/x-icon">
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-<script src="/js/main.js" defer></script>
+<!-- <script src="/js/main.js" defer></script> -->
 <script src="/blog/blogs_js/blog.js"></script>
     <link rel="stylesheet" href="/blog/blogs_css/style.css">
     
@@ -27,127 +27,15 @@
 </style>
 </head>
 <body>
-    <!-- <nav>
+    <nav>
     <div id="logo">
         <img src="/logo.ico" alt="Jaskin Tech logo">
         <p><i>J</i>ASKIN <i>T</i>ECH .</p>
     </div>
-    <ul id="nav_right">
-        
-        
-            
-            <li class="nav_right_main mobile_off">
-                <a href="/">Home</a>
-            </li>
-            
-        
-        
-        
-            
-            <li class="nav_right_main mobile_off">
-                <a href="/faq/">FAQ</a>
-            </li>
-            
-        
-        
-        
-            
-            <li class="nav_right_main mobile_off">
-                <a href="/about/">About</a>
-            </li>
-            
-        
-        
-        
-            
-            <li class="nav_right_main nav_dropdown_parent mobile_off">
-                <a href="/services/">Services <ion-icon name="chevron-down"></ion-icon></a>
-                <ul class="nav_dropdown">
-                    
-                    <li>
-                        <a href="/services/web_development/">Web Development</a>
-                    </li>
-                    
-                    <li>
-                        <a href="/services/digital_marketing">Digital Marketing</a>
-                    </li>
-                    
-                    <li>
-                        <a href="/services/business_software">Business Software</a>
-                    </li>
-                    
-                </ul>
-            </li>
-            
-        
-        
-        
-            
-            <li class="nav_right_main mobile_off">
-                <a href="/blog/">Blogs</a>
-            </li>
-            
-        
-        
-        
-            
-            <li class="nav_right_main mobile_off">
-                <a href="/contact/">Contact</a>
-            </li>
-            
-        
-        
-        <li id="nav_dropdown_button" class="nav_right_main mobile_on" style="font-size: 35px;"><ion-icon name="menu"></ion-icon></li>
-    </ul>
-    <div id="nav_dropdown_menu">
-        <div id="nav_dropdown_main">
-            
-            
-            <a href="/" class="item">
-                <div class="item_image_frame"><img src="/images/home.jpg" alt=""></div>
-                <p>Home</p>
-            </a>
-            
-            
-            
-            <a href="/faq/" class="item">
-                <div class="item_image_frame"><img src="/images/faq.jpg" alt=""></div>
-                <p>FAQ</p>
-            </a>
-            
-            
-            
-            <a href="/about/" class="item">
-                <div class="item_image_frame"><img src="/images/about_us.jpg" alt=""></div>
-                <p>About</p>
-            </a>
-            
-            
-            
-            <a href="/services/" class="item">
-                <div class="item_image_frame"><img src="/images/services.jpg" alt=""></div>
-                <p>Services</p>
-            </a>
-            
-            
-            
-            <a href="/blog/" class="item">
-                <div class="item_image_frame"><img src="/images/blog.webp" alt=""></div>
-                <p>Blogs</p>
-            </a>
-            
-            
-            
-            <a href="/contact/" class="item">
-                <div class="item_image_frame"><img src="/images/contact.webp" alt=""></div>
-                <p>Contact</p>
-            </a>
-            
-            
-        </div>
-        <div id="nav_dropdown_sub"><img src="/images/iconified/icon-fotor-20231215202510.png" alt=""></div>
+    <div >
+        <div id="menu_button" class="links_main" onclick="toggle_side_menu()"><ion-icon name="menu"></ion-icon></div>
     </div>
-</nav> -->
+</nav>
     <div id="page">
         <main>
             <div id="blog_header">
@@ -191,7 +79,7 @@
             </section>
         </main>
         <div id="menu">
-            <div class="menu_item" onclick="close_side_menu()">
+            <div class="menu_item" onclick="toggle_side_menu()">
                 <p>Close</p>
                 <ion-icon name="close"></ion-icon>
             </div>

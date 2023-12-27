@@ -6,6 +6,8 @@ main{
     width: 100vw;
     height: 60vh;
     display: flex;
+    background: var(--su-bg);
+    color: #ddd;
 }
 #hero_section_text{
     width: 40%;
@@ -24,7 +26,6 @@ main{
     font-size: 4.4em;
     font-weight: 400;
     font-family: var(--cabin-ver);
-    color: var(--txt-soft3);
     line-height: 160%;
     margin-bottom: 20px;
 }
@@ -33,9 +34,9 @@ main{
 #hero_section_img{
     width: 50%;
 }
-#hero_section_img img{
+/* #hero_section_img img{
     object-fit: contain;
-}
+} */
 
 
 @media (max-width: 650px) {

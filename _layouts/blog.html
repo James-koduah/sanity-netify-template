@@ -8,7 +8,7 @@
     {%include blog_font_family_choice.txt%}
 </head>
 <body>
-    <!-- {%include default_nav.html%} -->
+    {%include blog_nav.html%}
     <div id="page">
         <main>
             <div id="blog_header">
@@ -24,7 +24,7 @@
             </section>
         </main>
         <div id="menu">
-            <div class="menu_item" onclick="close_side_menu()">
+            <div class="menu_item" onclick="toggle_side_menu()">
                 <p>Close</p>
                 <ion-icon name="close"></ion-icon>
             </div>

@@ -1,5 +1,12 @@
 let side_menu_toggle = true
-function close_side_menu(){
+function toggle_side_menu(){
     let menu = document.getElementById('menu')
-    menu.style.display = 'none'
+    if (side_menu_toggle){
+        menu.style.display = 'none'
+        side_menu_toggle = false
+    }else{
+        menu.style.display = 'block'
+        side_menu_toggle = true
+    }
+    
 }
